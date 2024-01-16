@@ -2,11 +2,10 @@
 import random
 
 while True:
-    user_action = input("Enter choice(rock, paper, scissrs): ")
+    user_action = input("Enter choice(rock, paper, scissors): ")
     possible_actions = ["rock", "paper","scissors"]
     computer_action = random.choice (possible_actions)
-    print(f"\nyou chose{user_action}, computer chose{computer_action}.\n")
-
+    
     if user_action == computer_action:
         print("Both players selected {user_action}. Its a tie!")
     elif user_action =="rock":
